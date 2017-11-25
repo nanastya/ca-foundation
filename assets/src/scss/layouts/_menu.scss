@@ -1,0 +1,14 @@
+.menu {
+  @include menu-direction(vertical);
+  @include breakpoint(large) {
+    justify-content: flex-end;
+    @include menu-direction(horizontal);
+  }
+  &__item {
+
+  }
+  &__submenu {
+    @include menu-base;
+    @include menu-direction(vertical);
+  }
+}

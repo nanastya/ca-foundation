@@ -1,0 +1,16 @@
+{
+  "name": "creative-agency-foundation",
+  "description": "My first gulp project",
+  "main": "gulpfile.js",
+  "author": "Nastya",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "slick-carousel": "^1.8.1",
+    "foundation-sites": "^6.4.3"
+  }
+}

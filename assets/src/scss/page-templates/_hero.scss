@@ -1,0 +1,40 @@
+.hero {
+  height: 100vh;
+  margin-bottom: rem-calc(100);
+  &__row{
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+  }
+  &__info-col {
+    @include flex-grid-column(6);
+  }
+  &__bg {
+
+  }
+  &__overlay {
+
+  }
+  &__img {
+
+  }
+  //Hero Info Block
+  &-info {
+
+    &__logo {
+
+    }
+    &__text {
+
+    }
+  }
+}
+
+//.hero-info {
+//  &__logo {
+//
+//  }
+//  &__text {
+//
+//  }
+//}
