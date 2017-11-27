@@ -1,13 +1,10 @@
 .header {
-  background-color: darkgreen;
-  @include breakpoint(large) {
-    background-color: lightgoldenrodyellow;
-  }
-  @include breakpoint(medium only) {
-    background-color: lightpink;
-  }
   &__row {
     @include flex-grid-row();
+    &--paddings {
+      align-items: center;
+      padding: 36px 0;
+    }
   }
   &__logo {
     @include flex-grid-column(2);

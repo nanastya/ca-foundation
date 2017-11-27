@@ -1,0 +1,21 @@
+.image-text-btn {
+  &__row {
+    @include flex-grid-row();
+    @include breakpoint(large) {
+      justify-content: space-between;
+      flex-direction: row-reverse;
+    }
+  }
+  &__wrap {
+    &-text {
+      @include breakpoint(large) {
+        @include flex-grid-column(6);
+      }
+    }
+    &-image {
+      @include breakpoint(large) {
+        @include flex-grid-column(4);
+      }
+    }
+  }
+}

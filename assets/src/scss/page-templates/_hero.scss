@@ -1,24 +1,48 @@
 .hero {
-  height: 100vh;
-  margin-bottom: rem-calc(100);
+  position: relative;
+  z-index: 1;
+  &:before {
+    content: '';
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../images/layer-1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -2;
+  }
+  &:after {
+    content: '';
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparentize($white, 0.25);
+    z-index: -1;
+  }
   &__row{
-    height: 90vh;
     justify-content: center;
     align-items: center;
+    min-height: 450px;
+    padding: 50px 0;
+    @include breakpoint(small only) {
+      min-height: 200px;
+    }
   }
   &__info-col {
     @include flex-grid-column(6);
-  }
-  &__bg {
-
-  }
-  &__overlay {
-
-  }
-  &__img {
-
+    @include breakpoint(small only) {
+      @include flex-grid-column(12);
+    }
   }
   //Hero Info Block
+  &__title {
+    max-width: 100%;
+  }
   &-info {
 
     &__logo {
