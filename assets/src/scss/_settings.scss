@@ -81,6 +81,7 @@ $dark-gray: #60606e;
 //$black: #0a0a0a;
 //$white: #fefefe;
 //$body-background: $white;
+$ca-secondary-color: #7beec7;
 $body-font-color: $dark-gray;
 //$body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 //$body-antialiased: true;
@@ -100,7 +101,19 @@ $global-menu-padding: 0 rem-calc(18);
 //$print-transparent-backgrounds: true;
 //
 //@include add-foundation-colors;
-//
+a,
+button,
+input[type="submit"] {
+  transition-duration: .3s;
+  transition-timing-function: ease-in;
+  transition-property: background-color, color, border-color, opacity;
+}
+
+button {
+  &:hover {
+    cursor: pointer;
+  }
+}
 //// 2. Breakpoints
 //// --------------
 //

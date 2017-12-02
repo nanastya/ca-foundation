@@ -1,0 +1,44 @@
+//Heading
+@mixin heading-with-box() {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+  &:before {
+    content: '';
+    width: 67px;
+    height: 21px;
+    background-color: $ca-secondary-color;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transform: translate3d(-100px, 0, 0);
+    opacity: 0;
+    transition-property: transform, opacity;
+    transition-duration: .8s;
+    transition-timing-function: ease-in;
+    transition-delay: 1s;
+  }
+  &--animated {
+    &:before {
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+  }
+}
+
+@mixin btn($bg, $txt, $brd: $white) {
+  height: 50px;
+  min-width: 135px;
+  padding: 0 30px;
+  display: inline-block;
+  line-height: 50px;
+  border: 1px solid $brd;
+  color: $txt;
+  background-color: $bg;
+  &:hover {
+    color: $bg;
+    background-color: $txt;
+  }
+}

@@ -1,4 +1,5 @@
 .image-text-btn {
+  padding-bottom: 75px;
   &__row {
     @include flex-grid-row();
     @include breakpoint(large) {
@@ -17,5 +18,21 @@
         @include flex-grid-column(4);
       }
     }
+  }
+  &__image {
+    //animation-name: myAnimation;
+    //animation-duration: 10s;
+    //animation-delay: 1s;
+    //animation-fill-mode: backwards;
+
+    animation: fadeInLeft 1s, 1s tada 1s;
+
+    //animation-name: fadeInLeft, tada;
+    //animation-duration: 2s, 1s;
+    //animation-delay: 1s, 3s;
+    //animation-fill-mode: backwards, forwards;
+  }
+  &__link {
+    @include btn($ca-secondary-color, $white, $ca-secondary-color);
   }
 }

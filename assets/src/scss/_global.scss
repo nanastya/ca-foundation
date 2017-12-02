@@ -12,3 +12,6 @@ html {
   position: relative;
   z-index: 1;
 }
+.section-title {
+  @include heading-with-box();
+}

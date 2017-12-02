@@ -1,0 +1,15 @@
+.title-subtitle {
+  padding-top: 75px;
+  opacity: 0;
+  &__row {
+    @include flex-grid-row();
+    flex-direction: column;
+    align-items: center;
+  }
+  &--animated {
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+    opacity: 1;
+  }
+}
