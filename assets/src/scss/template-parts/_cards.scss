@@ -1,0 +1,24 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  &__card {
+    @include flex-grid-column(12);
+    @include breakpoint(medium) {
+      @include flex-grid-column(6);
+    }
+    &-icon {
+      font-size: 30px;
+    }
+    &-title {
+      font-size: rem-calc(18);
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    &-text {
+      font-size: rem-calc(14);
+      font-weight: 400;
+      text-transform: uppercase;
+      font-family: $body-font-family;
+    }
+  }
+}

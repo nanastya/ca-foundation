@@ -9,13 +9,19 @@
   }
   &__wrap {
     &-text {
+      @include flex-grid-column(12);
+      margin-bottom: 50px;
       @include breakpoint(large) {
         @include flex-grid-column(6);
+        margin-bottom: 0;
       }
     }
     &-image {
+      @include flex-grid-column(12);
+      text-align: center;
       @include breakpoint(large) {
         @include flex-grid-column(4);
+        text-align: left;
       }
     }
   }

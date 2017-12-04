@@ -1,0 +1,18 @@
+.two-col-txt-img {
+  &__row {
+    @include flex-grid-row();
+    justify-content: space-between;
+  }
+  &__text-col {
+    @include flex-grid-column(12);
+    @include breakpoint(medium) {
+      @include flex-grid-column(6);
+    }
+  }
+  &__img-col {
+    @include flex-grid-column(12);
+    @include breakpoint(medium) {
+      @include flex-grid-column(5);
+    }
+  }
+}

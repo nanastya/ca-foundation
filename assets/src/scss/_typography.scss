@@ -4,3 +4,7 @@
 // Font-family variables
 $primary-font-family: 'Montserrat', sans-serif;
 $body-font-family: 'Open Sans', sans-serif;
+
+//Ionicons
+$ionicons-font-path: "../../components/Ionicons/fonts";
+@import "../../components/Ionicons/scss/ionicons";
