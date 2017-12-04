@@ -5539,11 +5539,14 @@ module.exports = __webpack_require__(26);
             }
         });
 
-
-
         const section = $('.title-subtitle');
         if ( isScrolledIntoView( section ) ) {
             section.addClass('title-subtitle--animated');
+        }
+
+        const el = $('.two-col-txt-img');
+        if ( isScrolledIntoView(el) ) {
+            el.addClass('animated');
         }
 
     })

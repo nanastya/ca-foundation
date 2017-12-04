@@ -3,11 +3,19 @@
   flex-wrap: wrap;
   &__card {
     @include flex-grid-column(12);
+    @include breakpoint(large) {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+    @include breakpoint(medium down) {
+      margin-bottom: 25px;
+    }
     @include breakpoint(medium) {
       @include flex-grid-column(6);
     }
     &-icon {
       font-size: 30px;
+      line-height: 1;
     }
     &-title {
       font-size: rem-calc(18);

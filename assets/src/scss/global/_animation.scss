@@ -85,3 +85,15 @@
     transform: none;
   }
 }
+
+.image {
+  //&--right {
+  //  transform: translate3d(calc(100% + 15px), 0, 0);
+  //  transition-property: transform;
+  //  transition-duration: 1s;
+  //  transition-timing-function: ease-in;
+  //}
+  &--animated {
+    transform: translate3d(0, 0, 0);
+  }
+}

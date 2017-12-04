@@ -1,17 +1,33 @@
 .two-col-txt-img {
+  overflow: hidden;
   &__row {
     @include flex-grid-row();
     justify-content: space-between;
+    align-items: center;
+    @include breakpoint(medium down) {
+      justify-content: center;
+    }
   }
   &__text-col {
     @include flex-grid-column(12);
-    @include breakpoint(medium) {
+    @include breakpoint(medium down) {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+    @include breakpoint(medium only) {
+      @include flex-grid-column(9);
+    }
+    @include breakpoint(large) {
       @include flex-grid-column(6);
     }
   }
   &__img-col {
     @include flex-grid-column(12);
-    @include breakpoint(medium) {
+    @include breakpoint(medium only) {
+      text-align: center;
+      @include flex-grid-column(7);
+    }
+    @include breakpoint(large) {
       @include flex-grid-column(5);
     }
   }
